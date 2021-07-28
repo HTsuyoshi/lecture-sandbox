@@ -1,0 +1,20 @@
+RS=Rio Grande do Sul=Porto Alegre
+SC=Santa Catarina=Florianopolis 
+SP=Sao Paulo=Sao Paulo
+MG=Minas Gerais=Belo Horizonte
+GO=Goias=Goiania
+MT=Mato Grosso=Cuiaba
+ES=Espirito Santo=Vitoria
+RJ=Rio de Janeiro=Rio de Janeiro
+BA=Bahia=Salvador
+RO=Rondonia=Porto Velho
+AL=Alagoas=Maceio
+PB=Paraiba=Joao Pessoa
+AC=Acre=Rio Branco 
+RN=Rio Grande do Norte=Natal 
+CE=Ceara=Fortaleza 
+PI=Piaui=Teresina 
+MA=Maranhao=Sao Luis 
+AM=Amazonas=Manaus 
+RR=Roraima=Boa Vista
+TO=Tocantins=Palmas
