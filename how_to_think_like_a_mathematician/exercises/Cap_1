@@ -1,0 +1,54 @@
+----- 1.10 -----
+
+(i) cardinality 5
+(ii) cardinality 3
+(iii) cardinality 4
+(iv) cardinality 1 (correct: 0)
+(v) cardinality |N| (correct: Infinite)
+(vi) cardinality 2
+(vii) cardinality 2
+(viii) cardinality 3
+
+----- 1.20 -----
+
+(i) X U Y = {-1, 1, 2, 3, 4, 5, 7}
+(ii) Z U Z = Z
+
+----- 1.23 -----
+
+(i) X intersec Y
+    (a) = {x e Z | 0 <= x <=  5}
+    (b) = ∅
+    (c) = {0, 1, 5}
+(ii)
+    (a) = Z
+    (b) = ∅
+    (c) = Z
+
+----- 1.24 -----
+
+Union: {x e R | x > 7, or x = 6 or x = 7}
+Intersection: {x = 6}
+
+----- 1.24 -----
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
