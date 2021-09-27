@@ -1,0 +1,23 @@
+# Fdb version 3
+["pdflatex"] 1632686468 "test_1.tex" "test_1.pdf" "test_1" 1632686469
+  "/usr/share/texmf-dist/fonts/map/fontname/texfonts.map" 1617738065 3524 cb3e574dea2d1052e39280babc910dc8 ""
+  "/usr/share/texmf-dist/fonts/tfm/public/cm/cmbx12.tfm" 1617738065 1324 c910af8c371558dc20f2d7822f66fe64 ""
+  "/usr/share/texmf-dist/fonts/tfm/public/cm/cmmi12.tfm" 1617738065 1524 4414a8315f39513458b80dfc63bff03a ""
+  "/usr/share/texmf-dist/fonts/tfm/public/cm/cmr12.tfm" 1617738065 1288 655e228510b4c2a1abe905c368440826 ""
+  "/usr/share/texmf-dist/fonts/tfm/public/cm/cmr17.tfm" 1617738065 1292 296a67155bdbfc32aa9c636f21e91433 ""
+  "/usr/share/texmf-dist/fonts/tfm/public/cm/cmsy10.tfm" 1617738065 1124 6c73e740cf17375f03eec0ee63599741 ""
+  "/usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb" 1617738065 32080 340ef9bf63678554ee606688e7b5339d ""
+  "/usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb" 1617738065 32722 d7379af29a190c3f453aba36302ff5a9 ""
+  "/usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb" 1617738065 32362 179c33bbf43f19adbb3825bb4e36e57a ""
+  "/usr/share/texmf-dist/tex/latex/base/article.cls" 1617738065 20145 aad8c3dd3bc36e260347b84002182bc2 ""
+  "/usr/share/texmf-dist/tex/latex/base/size12.clo" 1617738065 8450 6fd3588c0e9d06f6f56c6cf4f7246466 ""
+  "/usr/share/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def" 1617738065 27164 3d5f7887a89df4eb2f6e86ba26ef3254 ""
+  "/usr/share/texmf-dist/web2c/texmf.cnf" 1617738065 39911 2da6c67557ec033436fe5418a70a8a61 ""
+  "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1630620920 5045527 a0ef06d06af438d62994481e52c2af5f ""
+  "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1630620894 2812680 b23d2335852f76f88ee2e48b068e4a3d ""
+  "test_1.aux" 1632686469 668 0024ce7c10c1a988d77b35caffaf6583 "pdflatex"
+  "test_1.tex" 1632686461 479 be0356047bc03a0f6f9068175f90dbdf ""
+  (generated)
+  "test_1.aux"
+  "test_1.log"
+  "test_1.pdf"
