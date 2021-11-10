@@ -16,25 +16,25 @@ O computador consegue entender apenas linguagem de máquina, mas não é prátic
 
 Uma `variável` é uma parte que foi alocada (separada) da memória pra você poder guardar algo lá. Por exemplo: o nome do usuário, data de nascimento e coisa do tipo.
 
-Uma variável pode ter o nome que você quiser desde que não seja uma `palavra reservada`.
+Uma `variável` pode ter o nome que você quiser desde que não seja uma `palavra reservada`.
 
 ## Tipos de variáveis
 
-Os tipos de variáveis existentes no python são:
+Os tipos de `variáveis` existentes no python são:
 
-* ´Inteiro (int)´: Um tipo de variável que guarda números sem vírgula.
+* `Inteiro (int)`: Um tipo de variável que guarda números sem vírgula.
     * Exemplo: 1, 10, -12, 22
 
-* ´Float (float)´: Um  tipo de variável que guarda números com vírgula.
+* `Float (float)`: Um  tipo de variável que guarda números com vírgula.
     * Exemplo: 1.2, 12323212.11231, -2.4, 0.23423442341
 
-* ´Booleana (bool)´: Uma tipo de variável que guarda apenas verdadeiro ou falso
+* `Booleana (bool)`: Uma tipo de variável que guarda apenas verdadeiro ou falso
     * Exemplo: True, False
 
-* ´Caractere (char)´: Uma tipo de variável que guarda apenas uma letra.
+* `Caractere (char)`: Uma tipo de variável que guarda apenas uma letra.
     * No python não tem char, tudo é considerado uma string
 
-* ´String (str)´: Uma tipo de variável que guarda apenas uma letra.
+* `String (str)`: Uma tipo de variável que guarda apenas uma letra.
     * Exemplo: "ola", "mundo", "    ", "$%#@ e"
 
 ## O que são palavras reservadas
@@ -43,7 +43,7 @@ Os tipos de variáveis existentes no python são:
 
 #### Por que variáveis não podem ter o mesmo nome de `Palavras reservadas`? 
 
-Imagine que você quer usar o comando print() mas voce também tem uma variável print, como o `interpretador` vai saber se você quer usar uma função ou ver uma variável?
+Imagine que você quer usar a `função` print() mas voce também tem uma `variável` print, como o `interpretador` vai saber se você quer usar uma `função` ou ver uma `variável`?
 
 Isso mesmo ele não vai saber, por exemplo:
 
@@ -78,3 +78,8 @@ Exemplo:
 * `input()`: Essa função recebe uma entrada do usuário
     * Exemplo: input('coloque um número aqui:'), input('coloque sua data de nascimento'), type(0.2)
 
+## Controle de fluxo
+
+Agora chegou a hora de vermos os famosos `if` e `else` statements.
+
+Exemplo:
