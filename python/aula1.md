@@ -34,14 +34,16 @@ Os tipos de `variáveis` existentes no python são:
 * `Caractere (char)`: Uma tipo de variável que guarda apenas uma letra.
     * No python não tem char, tudo é considerado uma string
 
-* `String (str)`: Uma tipo de variável que guarda apenas uma letra.
+* `String (str)`: Uma tipo de variável que guarda um conjunto de letras.
     * Exemplo: "ola", "mundo", "    ", "$%#@ e"
 
 ## O que são palavras reservadas
 
 `Palavras reservadas` são palavras que tem um efeito especial quando forem ser lidas pelo interpretador do python
 
-#### Por que variáveis não podem ter o mesmo nome de `Palavras reservadas`? 
+Por exemplo se o python ler `print()` ele vai entender que o print quer imprimir algo na tela
+
+#### Por que variáveis não podem ter o mesmo nome de `Palavras reservadas`?
 
 Imagine que você quer usar a `função` print() mas voce também tem uma `variável` print, como o `interpretador` vai saber se você quer usar uma `função` ou ver uma `variável`?
 
@@ -69,6 +71,10 @@ Exemplo:
 
 #### Algumas funções importantes
 
+As funções mostradas aqui são funcões `built-in` ou seja são funções que já estão prontas no python e vem junto com ele
+
+[Aqui](https://docs.python.org/3/library/functions.html) você pode encontrar algumas funções que já estão prontas no python 3
+
 * `print()`: Essa função imprime algo na tela
     * Exemplo: print('olaaa'), print(23), print(0.2)
 
@@ -77,9 +83,3 @@ Exemplo:
 
 * `input()`: Essa função recebe uma entrada do usuário
     * Exemplo: input('coloque um número aqui:'), input('coloque sua data de nascimento'), type(0.2)
-
-## Controle de fluxo
-
-Agora chegou a hora de vermos os famosos `if` e `else` statements.
-
-Exemplo:
