@@ -64,7 +64,9 @@ There are simple but powerful `Shell/Python` script used to dump login credentia
 Other tools:
 
 [pupy](https://github.com/n1nj4sec/pupy)
+
 [LaZagne](https://github.com/AlessandroZ/LaZagne)
+
 [gimmecredz](https://github.com/0xmitsurugi/gimmecredz)
 
 ## Exploiting services running as root
