@@ -6,7 +6,15 @@
 
 Secure key establishment:
 
+- Alice knows she is talking with Bob and Bob knows he is talking with Alice
+
 Secure communication:
+
+- Confidentiality and Integrity
+
+    - Digital Signatures (2 half of the course)
+    - Anonymous communication (Mix net)
+    - Anonymous digital cash (Digital coin)
 
 Secure comunication:
 
@@ -60,4 +68,29 @@ Encryption algorithm is publicly known;
 - Something you should try to invent yourself
     - many many examples of broken ad-hoc designs
 
+## Crypto Magic
 
+### Privately outsourcing computation
+
+
+
+### Zero Knowledge
+
+
+## Cryptography steps
+
+Three steps:
+
+- Precisely specify threat model
+- Propose a construction
+- Prova that breaking construction under threat mode will solve and underlying hard problem
+
+## Books
+
+### History of Cryptography
+
+- The Code Breakers (1996) by David Kahn
+
+### Discrete Probability
+
+- http://en.wikibooks.org/High_School_Mathematics_Extensions/Discrete_Probability

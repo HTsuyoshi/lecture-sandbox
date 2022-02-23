@@ -10,7 +10,7 @@
 
 ### Sec
 
-* [A arte de enganar](./Sec/A_Arte_de_enganar)
+* A arte de enganar
 * [Cryptography I](./Sec/Cryptography_I)
 * [Introducao aos testes de invasao](./Sec/Introducao_aos_testes_de_invasao)
 * [Port Swigger](./Sec/Port_Swigger)

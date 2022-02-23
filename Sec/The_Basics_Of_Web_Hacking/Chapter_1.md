@@ -157,3 +157,36 @@ Some of the most common injections attacks targer the following functionality:
 - Operating system (`OS`) commands
 
 #### Cross-Site Scripting (XSS)
+
+Occurs when user input is accepted by the application as part of request and then in used in the output of the response without proper output encoding. XSS alows attackers to execute scripts (JavaScript and VBScript) in the victim's browser, which can hijack user sessions, act as keyloggers, redirect the user to malicious sites, etc...
+
+- Reflected: Is much more widespread in web applications and is considered to be less harmful because it's one-time attack where the payload contains the malicious script (Attack 1:1 hacker and victim).
+
+- Stored: Is harder to find in web applications, but is more damaging because it persists across multiple requests and can exploit numerous users with one attack. Occurs when a hacker is able to inject the malicious script into the aplication and have it be avaliable to all visiting users (Attack 1:n hacker and everyone who enter the website)
+
+#### Broken Authentication and Session Management
+
+Sessions are the unique identifiers that are assigned to users after authenticating and have many vulnerabilities or attacks associated with how these identifiers are used by the web application.
+
+Application functions related to authentication and session management are often not implemented correctly, allowing attackers to compromise passwords, keys, session tokens, or exploit other implementation flaws to assume other user's identities. Other funcionality of the web application that is under the authentication umbrella also includes password reset, password change, account recovery, etc...
+
+#### Cross-Site Request Forgery
+
+CSRF occurs when a hacker is able to send a well-crafted request to an authenticated user that includes the necessary parameters to complete a valid application request without the victim (user) even realizing it.
+
+CSRF may also perform a valid request made to the web application. Some results of CSRF are changing a password, creating a new user, or creating web appication content via CMS.
+
+#### Security Misconfiguration
+
+This category deals with the security of the entire application stack (Operating System, Web Server, Database Management Systems)
+
+Example of vulnerabilities:
+
+- Out-of-date or unnecessary software
+- Unnecessary services enabled
+- Insecure account policies
+- Verbose error messages
+
+Effective security requires having a secure configuration defined and deployed for the application, frameworks, application server, web server, database server, and operating system. All these settings should be defined, implemented, and mantained, as many are not shipped with secure defaults. This includes keeping all software up to date, includeing all code libraries used by the application.
+
+### Setting Up a Test Environment
