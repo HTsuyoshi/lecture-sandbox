@@ -1,0 +1,4 @@
+#!/bin/bash
+
+CID=$(docker create nginx:latest)
+echo $CID

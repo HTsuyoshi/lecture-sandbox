@@ -1,0 +1,4 @@
+#!/bin/bash
+
+docker create --cidfile /tmp/web.cid nginx
+cat /tmp/web.cid
