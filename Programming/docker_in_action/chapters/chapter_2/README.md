@@ -95,6 +95,36 @@ Some examples of containers in scripts:
 - [script 1](./scripts/script_1) - Using environment variables
 - [script 2](./scripts/script_2) - Using CID files
 
+### Project in script format
 
+Create the 3 dockers:
+
+```sh
+MAILER_CID=$(docker run -d dockerinaction/ch2_mailer)
+WEB_CID=$(docker create nginx)
+AGENT_CID=$(docker create --link $WEB_CID:inisideweb \
+        --link $MAILER_CID:insidemailer \
+        dockerinaction/ch2_agent)
+```
+
+Start the 3 dockers:
+
+```sh
+docker start $WEB_CID
+docker start $AGENT_CID
+```
+
+Putting it all together:
+
+```sh
+MAILER_CID=$(docker run -d dockerinaction/ch2_mailer)
+WEB_CID=$(docker create -d nginx)
+AGENT_CID=$(docker create -d \
+        --link $WEB_CID:inisideweb \
+        --link $MAILER_CID:insidemailer \
+        dockerinaction/ch2_agent)
+```
+
+### Read-only file systems
 
 

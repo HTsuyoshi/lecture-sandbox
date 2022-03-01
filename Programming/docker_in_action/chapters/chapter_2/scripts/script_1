@@ -2,3 +2,9 @@
 
 CID=$(docker create nginx:latest)
 echo $CID
+
+CID=$(docker ps --latest --quiet)
+echo $CID
+
+CID=$(docker ps -l -q)
+echo $CID
