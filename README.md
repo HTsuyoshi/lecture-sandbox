@@ -26,9 +26,13 @@
 
 * [Python Regex](./Programming/py_regex)
 * [Docker in Action](./Programming/docker_in_action)
+* [Java Concurrency In Pratice](./Programming/java_concurrency_in_pratice)
+* [The Rust Programming Language](./Programming/the_rust_programming_language)
 
 ### Linux
 
 * [Curso sobre Sistema Operacional Linux](./Cadernos_de_Informatica/Curso_sobre_Sistema_Operacional_Linux)
 
 ### Misc
+
+* [The TEXbook](./Misc/The_TEXbook)

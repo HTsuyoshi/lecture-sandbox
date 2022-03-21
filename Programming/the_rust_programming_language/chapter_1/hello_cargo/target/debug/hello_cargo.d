@@ -1,0 +1,1 @@
+/home/azz/repos/lecture-sandbox/Programming/the_rust_programming_language/chapter_1/hello_cargo/target/debug/hello_cargo: /home/azz/repos/lecture-sandbox/Programming/the_rust_programming_language/chapter_1/hello_cargo/src/main.rs
