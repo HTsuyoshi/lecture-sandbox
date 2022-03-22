@@ -1,0 +1,1 @@
+/home/azz/repos/lecture-sandbox/Programming/the_rust_programming_language/chapter_2/guessing_game/target/debug/guessing_game: /home/azz/repos/lecture-sandbox/Programming/the_rust_programming_language/chapter_2/guessing_game/src/main.rs
