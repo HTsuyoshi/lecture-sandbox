@@ -141,3 +141,70 @@ carlos~montoya
 ```
 
 Para outros bancos de dados temos o [cheatsheet](https://portswigger.net/web-security/sql-injection/cheat-sheet)
+
+### Examinando o banco de dados
+
+#### Buscando a versão e o tipo de Banco de Dados
+
+Bancos de dados diferentes vão exigir diferentes tipos de buscas para determinar o tipo e a versão do banco de dados
+
+Por exemplo, para pegar a versão do banco de dados do MySQL poderia ser usado a injeção abaixo:
+
+```
+' UNION SELECT @@version--
+```
+
+#### Listando os conteúdos do banco de dados
+
+A maioria dos Bancos de Dados (Exceção da Oracle) tem um conjunto de visualizações chamados de *information schema* que provê informações do banco de dados
+
+Pegar todas as informações:
+
+```
+SELECT * FROM information_schema.tables
+```
+
+Pegar apenas a coluna dos usuários:
+
+```
+SELECT * FROM information_schema.columns WHERE table_name = 'Users'
+```
+
+#### Listando os conteúdos do banco de dados Oracle
+
+Pegar todas as informações:
+
+```
+SELECT * FROM all_tables
+```
+
+Pegar apenas a coluna dos usuários:
+
+```
+SELECT * FROM all_tab_columns WHERE table_name = 'USERS'
+```
+
+### Injeção SQL às cegas
+
+A injeção SQL às cegas aparece quanto o banco de dados é vulnerável à SQL injection, mas a resposta HTTP não contém resultados relevantes da busca SQL ou de qualquer detalhe de erro do banco de dados.
+
+Muitos ataques como UNION attack não são mais tão efetivos, já que se baseiam na resposta HTTP
+
+#### Explorando Injeção SQL às cegas ativando respostas condicionais
+
+Fazendo uma injeção SQL no site dessas duas formas:
+
+```
+…xyz' AND '1'='1
+…xyz' AND '1'='2
+```
+
+Podemos ver que a primeira vai retornar um resultado positivo enquanto a segunda busca vai resultar em um resultado negativo
+
+Usando essas comparações podemos, por exemplo, comparar se o primeiro caractere da senha do `Administrador` é maior que `m`:
+
+```
+xyz' AND SUBSTRING((SELECT Password FROM Users WHERE Username = 'Administrator'), 1, 1) > 'm
+```
+
+E ir comparando os caracteres do Administrador até descobrir a senha dele
