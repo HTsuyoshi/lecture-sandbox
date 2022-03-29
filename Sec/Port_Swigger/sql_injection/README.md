@@ -207,4 +207,4 @@ Usando essas comparações podemos, por exemplo, comparar se o primeiro caracter
 xyz' AND SUBSTRING((SELECT Password FROM Users WHERE Username = 'Administrator'), 1, 1) > 'm
 ```
 
-E ir comparando os caracteres do Administrador até descobrir a senha dele
+E ir comparando todos caracteres do Administrador até descobrir a senha completa (Para isso existe a ferramenta Intruder do burp suite)
