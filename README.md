@@ -12,7 +12,7 @@
 
 * A arte de enganar
 * [Cryptography I](./Sec/Cryptography_I)
-* [Understanding Cyptography](./Sec/Understanding_Cyptography)
+* [Understanding Cryptography](./Sec/Understanding_Cryptography)
 * [Introducao aos testes de invasao](./Sec/Introducao_aos_testes_de_invasao)
 * [Port Swigger](./Sec/Port_Swigger)
 * [Privilege Escalation: A Stairwaay to Heaven](./Sec/Privilege_Escalation_A_Stairway_to_Heaven)
