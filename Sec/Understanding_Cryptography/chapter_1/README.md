@@ -31,7 +31,7 @@ essence of okinawan karate will remain intact
 
 Using this [website](https://crypto.interactive-maths.com/frequency-analysis-breaking-the-code.html)
 
-![website](./text_png)
+![website](./text_1.png)
 
 #### 1.3
 
