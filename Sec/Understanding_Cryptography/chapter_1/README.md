@@ -4,7 +4,7 @@
 
 #### 1.1
 
-[python script](./letter_frequency.py)
+[Python Script](./letter_frequency.py)
 
 #### 1.2
 
@@ -41,7 +41,7 @@ Shoshin Nagamine wrote it.
 
 #### 2.1
 
-[Brute force](./shift_text.py)
+[Brute Force](./shift_text.py)
 
 #### 2.2
 
@@ -217,20 +217,176 @@ As we can see its very similar to the division formula `d = d*q + r` and `6` is 
 
 #### 7.1, 7.2, 7.3
 
-[Python script](./construct_table.py)
+[Python Script](./construct_table.py)
 
 #### 7.4
 
 ## 8
 
+```
+Z11 = 5⁻¹ = 9
+Z12 = 5⁻¹ = 5
+Z13 = 5⁻¹ = 8
+```
+
 ## 9
+
+## 9.1
+
+```
+3² mod 13
+9 mod 13
+```
+
+## 9.2
+
+```
+7² mod 13
+10 mod 13
+```
+
+## 9.3
+
+```
+3¹⁰ mod 13
+3 mod 13
+```
+
+## 9.4
+
+```
+7¹⁰⁰ mod 13
+10⁵⁰ mod 13
+9²⁵ mod 13
+9²⁴ * 9 mod 13
+1 * 9 mod 13
+9 mod 13
+```
+
+## 9.5
+
+```
+7^x = 11 mod 13
+7^2 = 10 mod 13
+7^5 = 11 mod 13
+```
 
 ## 10
 
+[Python Script](./relatively_prime.py)
+
 ## 11
+
+## 11.1
+
+[Python Script](./affine_cipher.py)
+
+## 11.2
+
+Lewis Carroll wrote it
 
 ## 12
 
+## 12.1
+
+Encryption:
+
+```
+E = a * x + b mod 30
+```
+
+Decryption:
+
+```
+E = (x - b) * a⁻¹ mod 30
+```
+
+## 12.2
+
+The keyspace of this alphabet is `30^c`, and c in this equation is the quantity of characters
+
+## 12.3
+
+[Python Script](./german_affine_cipher.py)
+
+## 12.4
+
+FRODO?
+
 ## 13
 
+???
+
+```
+c1 = x1 * p + y1 mod 26
+c2 = x2 * p + y2 mod 26
+```
+
 ## 14
+
+## 14.1
+
+```
+e1 = a1*x + b1 mod 26
+e2 = a2*x + b2 mod 26
+e3 = e2(e1(x))
+e3 = e2(a1*x + b1 mod 26))
+e3 = a2*(a1*x + b1) + b2 mod 26
+e3 = a2*a1*x + a2*b1 + b2 mod 26
+
+a3 = a2*a1 mod 26
+b3 = a2*b1 + b2 mod 26
+```
+
+## 14.2
+
+Given that:
+
+```
+a1 = 3
+b1 = 5
+a2 = 11
+b2 = 7
+```
+The values of `a3` and `b3` are:
+
+```
+a3 = 11*3 mod 26
+a3 = 33 mod 26
+a3 = 7 mod 26
+
+b3 = 11*5 + 7 mod 26
+b3 = 55 + 7 mod 26
+b3 = 62 mod 26
+b3 = 10 mod 26
+```
+
+## 14.3
+
+Encrypting `K = 10` with `e1`:
+
+```
+C1 = 3 * 10 + 5 mod 26
+C1 = 35 mod 26
+C1 = 9 mod 26
+```
+
+Encrypting `e1(K)` with `e2`:
+
+```
+C2 = 11 * 9 + 7 mod 26
+C2 = 106 mod 26
+C2 = 4 mod 26
+```
+
+Encrypting `K` with `e3`:
+
+```
+C3 = 7 * 10 + 10 mod 26
+C3 = 80 mod 26
+C3 = 4 mod 26
+```
+
+## 14.4
+
+If an exaustie key-search is applied to a double-encrypted affine ciphertext the key space interval remains the same, so encrypting two times doesn't make any difference to the attacker
