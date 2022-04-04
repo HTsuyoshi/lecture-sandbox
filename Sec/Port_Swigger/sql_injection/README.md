@@ -208,3 +208,28 @@ xyz' AND SUBSTRING((SELECT Password FROM Users WHERE Username = 'Administrator')
 ```
 
 E ir comparando todos caracteres do Administrador até descobrir a senha completa (Para isso existe a ferramenta Intruder do burp suite)
+
+#### Incluindo respostas condicionais feitas por erros SQL
+
+Supondo que a aplicação não tenha mudanças dependendo da query SQL feita, então alguns ataques anteriores não seriam possíveis serem executadas.
+
+Nesses casos é possível induzir a aplicação retornar erros condicionais ativando erros de SQL, frequentemente erros do banco de dados que não são tratados podem causar diferenças na resposta da aplicação.
+
+```
+xyz' AND (SELECT CASE WHEN (1=2) THEN 1/0 ELSE 'a' END)='a
+xyz' AND (SELECT CASE WHEN (1=1) THEN 1/0 ELSE 'a' END)='a
+```
+
+As duas entradas acima usam a palavra reservada `CASE` para testar uma condição e retornar uma expressão diferente dependendo se a condição for verdadeira ou falsa.
+
+A primeira expressão vai retornar verdadeiro, ou seja não causa erros.
+
+Já a segunda expressão vai causar um erro de divisão por zero.
+
+Usando essa técnica é possível verificar um caractere da senha de cada vez:
+
+```
+xyz' AND (SELECT CASE WHEN (Username = 'Administrator' AND SUBSTRING(Password, 1, 1) > 'm') THEN 1/0 ELSE 'a' END FROM Users)='a
+```
+
+
