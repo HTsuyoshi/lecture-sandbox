@@ -5,6 +5,7 @@
 ### Sec
 
 * [PortSwigger](./Sec/Port_Swigger)
+* [FIAP](./Sec/FIAP_Cyber_Security)
 
 ## Livros:
 
@@ -28,10 +29,12 @@
 * [Docker in Action](./Programming/docker_in_action)
 * [Java Concurrency In Pratice](./Programming/java_concurrency_in_pratice)
 * [The Rust Programming Language](./Programming/the_rust_programming_language)
+* [Rust Projects](./Programming/rust_projects)
 
 ### Linux
 
-* [Curso sobre Sistema Operacional Linux](./Cadernos_de_Informatica/Curso_sobre_Sistema_Operacional_Linux)
+* [Curso sobre Sistema Operacional Linux](./Linux/Cadernos_de_Informatica/Curso_sobre_Sistema_Operacional_Linux)
+* [Linux Essentials](./Linux/')
 
 ### Misc
 
