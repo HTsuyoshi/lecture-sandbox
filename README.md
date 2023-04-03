@@ -30,6 +30,7 @@
 * [Java Concurrency In Pratice](./Programming/java_concurrency_in_pratice)
 * [The Rust Programming Language](./Programming/the_rust_programming_language)
 * [Rust Projects](./Programming/rust_projects)
+* [C Programming Language](./Programming/c)
 
 ### Linux
 
